@@ -1,0 +1,37 @@
+ /* System font stack for SF Pro (Apple's font) */
+ body {
+    font-family: 'Inter', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  }
+ 
+ /* Custom Two-Line Toggle Icon */
+ .navbar-toggler-custom {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #999; /* Gray color */
+    position: relative;
+    transition: none; /* Disable hover animation */
+  }
+
+  .navbar-toggler-custom::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: #999;
+    top: -6px;
+    left: 0;
+  }
+
+  /* Remove Bootstrap's default toggle icon */
+  .navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Shopping bag icon (gray, no hover) */
+  .bi-bag {
+    color: #999 !important; /* Gray color */
+    opacity: 0.9;
+  }
