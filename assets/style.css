@@ -1,6 +1,12 @@
  /* System font stack for SF Pro (Apple's font) */
  body {
     font-family: 'Inter', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    padding-top: 56px; /* Matches navbar height */
+  }
+
+  /* Remove gap below navbar */
+  .border-bottom {
+    margin-top: -1px; /* Snug against navbar */
   }
  
  /* Custom Two-Line Toggle Icon */
@@ -34,4 +40,9 @@
   .bi-bag {
     color: #999 !important; /* Gray color */
     opacity: 0.9;
+  }
+
+  .thick-heading {
+    font-weight: 800;
+    text-shadow: 0.5px 0.5px 0 rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
   }
