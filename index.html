@@ -72,8 +72,55 @@
     <h1 class="display-2 thick-heading text-center" style="font-family: 'Inter', sans-serif; font-weight: 800">Confirm your<br> case</h1>
   </div>
 
-  
 
+<!-- Add this below your existing heading -->
+<div class="container-fluid mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <!-- Information Section -->
+      <div class="border-top border-dark pt-4 mb-4">
+        <p class="lead">
+          To maintain confidentiality and ensure efficient resolution, please note:
+        </p>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <i class="bi bi-file-earmark-check me-2"></i>
+            All communications and documents shared through this portal must pertain directly to your active case.
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-shield-lock me-2"></i>
+            Apple maintains strict confidentiality protocols in accordance with our 
+            <a href="#" class="text-decoration-none">Data Protection Policy</a>. 
+            Case information is accessible only to authorized personnel.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Case ID Input -->
+      <form class="border-top border-dark pt-4">
+        <div class="mb-3">
+          <label for="caseIdInput" class="form-label fw-medium">
+            Case Reference Number
+          </label>
+          <input 
+            type="text" 
+            class="form-control form-control-lg" 
+            id="caseIdInput"
+            placeholder="Enter 12-digit case ID (e.g., APL-2024-XXXXXX)"
+            pattern="[A-Za-z0-9-]{12,20}"
+            required
+          >
+          <div class="form-text text-muted">
+            Located in your initial confirmation email or case documentation
+          </div>
+        </div>
+        <button type="submit" class="btn btn-dark mt-3">
+          <i class="bi bi-forward-fill me-2"></i>Submit Case ID
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
 
 
 
